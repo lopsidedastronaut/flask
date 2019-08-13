@@ -1,0 +1,27 @@
+.centered {
+  display: grid;
+  height: 100vh;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+          ". . ."
+          ". form ."
+          ". . .";
+  ;
+;
+}
+
+.form-style {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 5px 10px 10px 5px black;
+  grid-area: form;
+}
+.login {
+  text-align: center;
+  font-family: Brush Script MT, Helvetica, sans-serif;
+  font-size: 40px;
+}
